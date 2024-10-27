@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A6D9F7">
+    android:background="#E0F7FA">
 
     <!-- Logo dan Gambar Pesawat -->
     <ImageView
@@ -26,16 +26,14 @@
         android:textSize="30sp"
         android:fontFamily="cursive" />
 
-    <!-- Tombol Get Start -->
     <Button
-        android:id="@+id/getStartButton"
-        android:layout_width="200dp"
+        android:id="@+id/buttonGetStart"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/appNameText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_centerInParent="true"
         android:text="Get Start!"
-        android:backgroundTint="#91B9E0"
-        android:textColor="#000000" />
+        android:textSize="18sp"
+        android:backgroundTint="#90CAF9"
+        android:textColor="#FFFFFF" />
 
 </RelativeLayout>

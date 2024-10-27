@@ -13,6 +13,9 @@
         android:theme="@style/Theme.TravelGo"
         tools:targetApi="31">
         <activity
+            android:name=".DestinationActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name">
