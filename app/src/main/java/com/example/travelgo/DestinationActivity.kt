@@ -4,27 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import android.content.Intent
-import android.widget.Button
-
 
 class DestinationActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-
-        // Inisialisasi tombol Get Start
-        val getStartButton: Button = findViewById(R.id.buttonGetStart)
-        getStartButton.setOnClickListener {
-            // Pindah ke DestinationActivity
-            val intent = Intent(this, DestinationActivity::class.java)
-            startActivity(intent)
-        }
-    }
-
-
-        setContentView(R.layout.activity_destination)
+        setContentView(R.layout.activity_destination)  // Set layout hanya untuk activity_destination
 
         // Daftar contoh tempat wisata
         val destinations = listOf(

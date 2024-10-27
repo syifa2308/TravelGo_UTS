@@ -4,14 +4,6 @@
     android:layout_height="match_parent"
     android:background="#E0F7FA">
 
-    <!-- Logo dan Gambar Pesawat -->
-    <ImageView
-        android:id="@+id/logoImage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/travel_logo" />
 
     <!-- Nama Aplikasi -->
     <TextView
@@ -19,12 +11,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/logoImage"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="-381dp"
+        android:fontFamily="cursive"
         android:text="Travel Go"
         android:textColor="#000000"
-        android:textSize="30sp"
-        android:fontFamily="cursive" />
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="211dp"
+        android:layout_height="399dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/travel_logo" />
 
     <Button
         android:id="@+id/buttonGetStart"

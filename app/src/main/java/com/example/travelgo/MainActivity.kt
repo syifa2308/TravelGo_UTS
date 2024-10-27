@@ -2,8 +2,8 @@ package com.example.travelgo
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,11 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val getStartButton: Button = findViewById(R.id.getStartButton)
-
-        // Set onClick listener for the button
+        // Inisialisasi tombol Get Start
+        val getStartButton: Button = findViewById(R.id.buttonGetStart)
         getStartButton.setOnClickListener {
-            // Intent untuk berpindah ke Activity lain
+            // Pindah ke DestinationActivity
             val intent = Intent(this, DestinationActivity::class.java)
             startActivity(intent)
         }
