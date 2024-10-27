@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A6D9F7">
+
+    <!-- Logo dan Gambar Pesawat -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/travel_logo" />
+
+    <!-- Nama Aplikasi -->
+    <TextView
+        android:id="@+id/appNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Travel Go"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:fontFamily="cursive" />
+
+    <!-- Tombol Get Start -->
+    <Button
+        android:id="@+id/getStartButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appNameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Get Start!"
+        android:backgroundTint="#91B9E0"
+        android:textColor="#000000" />
+
+</RelativeLayout>
