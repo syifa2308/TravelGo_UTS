@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         // Inisialisasi tombol Get Start
         val getStartButton: Button = findViewById(R.id.buttonGetStart)
         getStartButton.setOnClickListener {

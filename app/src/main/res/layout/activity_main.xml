@@ -6,32 +6,36 @@
 
 
     <!-- Nama Aplikasi -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="311dp"
+        android:layout_height="499dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/travel_logo" />
+
     <TextView
         android:id="@+id/appNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/logoImage"
-        android:layout_marginTop="-381dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:fontFamily="cursive"
         android:text="Travel Go"
         android:textColor="#000000"
-        android:textSize="30sp" />
-
-    <ImageView
-        android:id="@+id/logoImage"
-        android:layout_width="211dp"
-        android:layout_height="399dp"
-        android:layout_marginTop="50dp"
-        android:src="@drawable/travel_logo" />
+        android:textSize="50sp" />
 
     <Button
         android:id="@+id/buttonGetStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Get Start!"
-        android:textSize="18sp"
+        android:layout_below="@id/appNameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#90CAF9"
-        android:textColor="#FFFFFF" />
+        android:text="Get Start!"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
 
 </RelativeLayout>

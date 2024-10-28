@@ -1,65 +1,96 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A6D9F7">
+    android:background="#E0F7FA"
+    android:padding="16dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:orientation="vertical">
 
-        <!-- Header - Nama Aplikasi -->
+
+        <!-- App Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Travel Go"
-            android:textSize="30sp"
+            android:textSize="45sp"
             android:fontFamily="cursive"
             android:textColor="#000000"
             android:gravity="center"
             android:layout_gravity="center_horizontal" />
 
-        <!-- Teks sambutan -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello!\nWhere will you go?"
-            android:textSize="18sp"
-            android:layout_marginTop="16dp"
-            android:textColor="#000000" />
+        <!-- Search Bar -->
 
-        <!-- Pencarian -->
-        <EditText
+        <!-- Description -->
+        <LinearLayout
+            android:layout_width="366dp"
+            android:layout_height="43dp"
+            android:background="@drawable/holder_search"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="48dp"
+            android:paddingBottom="16dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDestinations"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingStart="8dp"
+                android:drawableEnd="@drawable/ic_search"
+                android:drawablePadding="8dp"
+                android:paddingEnd="8dp"
+                android:minHeight="48dp"/>
+
+        </LinearLayout>
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Search..."
-            android:background="@drawable/ic_search" />
-
-        <!-- Deskripsi -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Travel Go merupakan solusi praktis bagi para traveler dan pecinta wisata yang ingin menemukan destinasi lokal terbaik. Aplikasi ini menyediakan informasi lengkap mengenai tempat wisata, mulai dari kategori wisata alam, sejarah, budaya. Setiap destinasi dilengkapi dengan deskripsi dan foto."
-            android:layout_marginTop="16dp"
-            android:textColor="#000000" />
+            android:textSize="14sp"
+            android:textAlignment="center"
+            android:textColor="#333"
+            android:paddingBottom="16dp" />
 
-        <!-- Label Rekomendasi -->
+        <!-- Recommendation Section Title -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Recommendation"
-            android:textSize="20sp"
-            android:layout_marginTop="24dp"
-            android:textColor="#000000" />
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#333"
+            android:paddingBottom="8dp" />
 
-        <!-- RecyclerView untuk daftar tempat wisata -->
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
+        <!-- Recommendation Holders -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp" />
+            android:orientation="vertical">
+
+            <!-- First Destination Holder -->
+            <include layout="@layout/destination_holder" />
+
+            <!-- Second Destination Holder -->
+            <include layout="@layout/destination_holder" />
+
+            <!-- Third Destination Holder -->
+            <include layout="@layout/destination_holder" />
+
+            <!-- Fourth Destination Holder -->
+            <include layout="@layout/destination_holder" />
+
+            <!-- Fifth Destination Holder -->
+            <include layout="@layout/destination_holder" />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>

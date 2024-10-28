@@ -13,15 +13,15 @@ class DestinationActivity : AppCompatActivity() {
 
         // Daftar contoh tempat wisata
         val destinations = listOf(
-            Destination("Candi Borobudur", "Magelang, Indonesia", "4.8/5", R.drawable.candi_borobudur),
-            Destination("Dufan", "Jakarta, Indonesia", "4.8/5", R.drawable.dufan),
-            Destination("Pulau Kalimantung", "Sibolga, Sumatera Utara", "4.8/5", R.drawable.kalimantung),
-            Destination("Labuan Bajo", "Nusa Tenggara Timur, Indonesia", "4.8/5", R.drawable.labuan_bajo),
-            Destination("Pulau Karang", "Sumatera Utara, Indonesia", "4.8/5", R.drawable.karang)
+            Destination("Candi Borobudur", "Magelang, Indonesia", "4.8/5", R.drawable.candi_borobudur, "Candi Buddha terbesar di dunia."),
+            Destination("Dufan", "Jakarta, Indonesia", "4.7/5", R.drawable.dufan, "Taman hiburan terkenal di Indonesia."),
+            Destination("Pulau Kalimantung", "Sibolga, Sumatera Utara", "4.8/5", R.drawable.kalimantung, "Pulau yang indah dengan pantai yang bersih."),
+            Destination("Labuan Bajo", "Nusa Tenggara Timur, Indonesia", "4.9/5", R.drawable.labuan_bajo, "Tempat terkenal untuk melihat komodo."),
+            Destination("Pulau Karang", "Sumatera Utara, Indonesia", "4.8/5", R.drawable.karang, "Pulau kecil dengan pemandangan menakjubkan.")
         )
 
         // Atur RecyclerView
-        val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
+        val recyclerView = findViewById<RecyclerView>(R.id.recyclerViewDestinations)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = DestinationAdapter(destinations)
     }
